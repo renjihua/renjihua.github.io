@@ -22,15 +22,16 @@ function printArea(ele) {
 
   const doc = iframe.contentWindow.document
   doc.open()
+  let css = ''
   const links = Array.from(document.querySelectorAll('head>link')).filter(link => link.getAttribute('rel').toLowerCase() === 'stylesheet')
   links.forEach(link => {
-    doc.write(link.outerHTML)
+    css += link.outerHTML
   })
   const styles = Array.from(document.querySelectorAll('head>style'))
   styles.forEach(style => {
-    doc.write(style.outerHTML)
+    css += style.outerHTML
   })
-  doc.write(printElement.outerHTML)
+  doc.write(css + printElement.outerHTML)
   doc.close()
 
   iframe.onload = () => {
