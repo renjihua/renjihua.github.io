@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>ecahrts渲染地图案例 | 前端文档</title>
-    <meta name="generator" content="VuePress 1.9.7">
+    <meta name="generator" content="VuePress 1.8.2">
     <link rel="icon" href="/logo.png">
     <meta name="description" content="">
     
-    <link rel="preload" href="/assets/css/0.styles.23b7c006.css" as="style"><link rel="preload" href="/assets/js/app.dbea4ab9.js" as="script"><link rel="preload" href="/assets/js/2.03d1e9d6.js" as="script"><link rel="preload" href="/assets/js/9.75fe7d51.js" as="script"><link rel="prefetch" href="/assets/js/10.639e7959.js"><link rel="prefetch" href="/assets/js/11.b290a821.js"><link rel="prefetch" href="/assets/js/12.c78e2392.js"><link rel="prefetch" href="/assets/js/13.e9476b98.js"><link rel="prefetch" href="/assets/js/3.c6ecc470.js"><link rel="prefetch" href="/assets/js/4.6424523f.js"><link rel="prefetch" href="/assets/js/5.e41601d7.js"><link rel="prefetch" href="/assets/js/6.ae4e9c38.js"><link rel="prefetch" href="/assets/js/7.51511ade.js"><link rel="prefetch" href="/assets/js/8.8938109e.js">
-    <link rel="stylesheet" href="/assets/css/0.styles.23b7c006.css">
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.79ad13e6.js" as="script"><link rel="preload" href="/assets/js/2.20e28fc8.js" as="script"><link rel="preload" href="/assets/js/9.915065dc.js" as="script"><link rel="prefetch" href="/assets/js/10.bc8ec685.js"><link rel="prefetch" href="/assets/js/11.43855958.js"><link rel="prefetch" href="/assets/js/12.6b86f72a.js"><link rel="prefetch" href="/assets/js/13.3af5d0d0.js"><link rel="prefetch" href="/assets/js/3.26f25939.js"><link rel="prefetch" href="/assets/js/4.ebcf6912.js"><link rel="prefetch" href="/assets/js/5.2e964150.js"><link rel="prefetch" href="/assets/js/6.ddc3f822.js"><link rel="prefetch" href="/assets/js/7.89c0b812.js"><link rel="prefetch" href="/assets/js/8.6e3a6435.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
   </head>
   <body>
     <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/eltable-dolayout.html" class="nav-link">
@@ -46,92 +46,92 @@
     echarts<span class="token punctuation">.</span><span class="token function">registerMap</span><span class="token punctuation">(</span><span class="token string">'zhejiang'</span><span class="token punctuation">,</span> geoJson<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">var</span> chart <span class="token operator">=</span> echarts<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'main'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     chart<span class="token punctuation">.</span><span class="token function">setOption</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-      <span class="token literal-property property">backgroundColor</span><span class="token operator">:</span> <span class="token string">'#020933'</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">tooltip</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      backgroundColor<span class="token operator">:</span> <span class="token string">'#020933'</span><span class="token punctuation">,</span>
+      tooltip<span class="token operator">:</span> <span class="token punctuation">{</span>
 
       <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">geo</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
-        <span class="token literal-property property">map</span><span class="token operator">:</span> <span class="token string">'zhejiang'</span><span class="token punctuation">,</span>
-        <span class="token literal-property property">aspectScale</span><span class="token operator">:</span> <span class="token number">0.75</span><span class="token punctuation">,</span> <span class="token comment">//长宽比</span>
-        <span class="token literal-property property">zoom</span><span class="token operator">:</span> <span class="token number">1.1</span><span class="token punctuation">,</span>
-        <span class="token literal-property property">roam</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-        <span class="token literal-property property">itemStyle</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-          <span class="token literal-property property">normal</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-            <span class="token literal-property property">areaColor</span><span class="token operator">:</span> <span class="token string">'#013C62'</span><span class="token punctuation">,</span>
-            <span class="token literal-property property">shadowColor</span><span class="token operator">:</span> <span class="token string">'#182f68'</span><span class="token punctuation">,</span>
+      geo<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        map<span class="token operator">:</span> <span class="token string">'zhejiang'</span><span class="token punctuation">,</span>
+        aspectScale<span class="token operator">:</span> <span class="token number">0.75</span><span class="token punctuation">,</span> <span class="token comment">//长宽比</span>
+        zoom<span class="token operator">:</span> <span class="token number">1.1</span><span class="token punctuation">,</span>
+        roam<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        itemStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+          normal<span class="token operator">:</span> <span class="token punctuation">{</span>
+            areaColor<span class="token operator">:</span> <span class="token string">'#013C62'</span><span class="token punctuation">,</span>
+            shadowColor<span class="token operator">:</span> <span class="token string">'#182f68'</span><span class="token punctuation">,</span>
             <span class="token comment">// shadowOffsetX: 0,</span>
             <span class="token comment">// shadowOffsetY: 25</span>
           <span class="token punctuation">}</span><span class="token punctuation">,</span>
-          <span class="token literal-property property">emphasis</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-            <span class="token literal-property property">areaColor</span><span class="token operator">:</span> <span class="token string">'#2AB8FF'</span><span class="token punctuation">,</span>
-            <span class="token literal-property property">borderWidth</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
-            <span class="token literal-property property">color</span><span class="token operator">:</span> <span class="token string">'green'</span><span class="token punctuation">,</span>
-            <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-              <span class="token literal-property property">show</span><span class="token operator">:</span> <span class="token boolean">false</span>
+          emphasis<span class="token operator">:</span> <span class="token punctuation">{</span>
+            areaColor<span class="token operator">:</span> <span class="token string">'#2AB8FF'</span><span class="token punctuation">,</span>
+            borderWidth<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            color<span class="token operator">:</span> <span class="token string">'green'</span><span class="token punctuation">,</span>
+            label<span class="token operator">:</span> <span class="token punctuation">{</span>
+              show<span class="token operator">:</span> <span class="token boolean">false</span>
             <span class="token punctuation">}</span>
           <span class="token punctuation">}</span>
         <span class="token punctuation">}</span>
       <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">series</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      series<span class="token operator">:</span> <span class="token punctuation">[</span>
         <span class="token punctuation">{</span>
-          <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'map'</span><span class="token punctuation">,</span>
-          <span class="token literal-property property">map</span><span class="token operator">:</span> <span class="token string">'zhejiang'</span><span class="token punctuation">,</span>
-          <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-            <span class="token literal-property property">normal</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-              <span class="token literal-property property">show</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-              <span class="token literal-property property">textStyle</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-                <span class="token literal-property property">color</span><span class="token operator">:</span> <span class="token string">'#fff'</span>
+          type<span class="token operator">:</span> <span class="token string">'map'</span><span class="token punctuation">,</span>
+          map<span class="token operator">:</span> <span class="token string">'zhejiang'</span><span class="token punctuation">,</span>
+          label<span class="token operator">:</span> <span class="token punctuation">{</span>
+            normal<span class="token operator">:</span> <span class="token punctuation">{</span>
+              show<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+              textStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+                color<span class="token operator">:</span> <span class="token string">'#fff'</span>
               <span class="token punctuation">}</span>
             <span class="token punctuation">}</span><span class="token punctuation">,</span>
-            <span class="token literal-property property">emphasis</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-              <span class="token literal-property property">textStyle</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-                <span class="token literal-property property">color</span><span class="token operator">:</span> <span class="token string">'#fff'</span>
+            emphasis<span class="token operator">:</span> <span class="token punctuation">{</span>
+              textStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+                color<span class="token operator">:</span> <span class="token string">'#fff'</span>
               <span class="token punctuation">}</span>
             <span class="token punctuation">}</span>
           <span class="token punctuation">}</span><span class="token punctuation">,</span>
 
-          <span class="token literal-property property">itemStyle</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-            <span class="token literal-property property">normal</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-              <span class="token literal-property property">borderColor</span><span class="token operator">:</span> <span class="token string">'#2ab8ff'</span><span class="token punctuation">,</span>
-              <span class="token literal-property property">borderWidth</span><span class="token operator">:</span> <span class="token number">1.5</span><span class="token punctuation">,</span>
-              <span class="token literal-property property">areaColor</span><span class="token operator">:</span> <span class="token string">'#12235c'</span>
+          itemStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+            normal<span class="token operator">:</span> <span class="token punctuation">{</span>
+              borderColor<span class="token operator">:</span> <span class="token string">'#2ab8ff'</span><span class="token punctuation">,</span>
+              borderWidth<span class="token operator">:</span> <span class="token number">1.5</span><span class="token punctuation">,</span>
+              areaColor<span class="token operator">:</span> <span class="token string">'#12235c'</span>
             <span class="token punctuation">}</span><span class="token punctuation">,</span>
-            <span class="token literal-property property">emphasis</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-              <span class="token literal-property property">areaColor</span><span class="token operator">:</span> <span class="token string">'#2AB8FF'</span><span class="token punctuation">,</span>
-              <span class="token literal-property property">borderWidth</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
-              <span class="token literal-property property">color</span><span class="token operator">:</span> <span class="token string">'green'</span>
+            emphasis<span class="token operator">:</span> <span class="token punctuation">{</span>
+              areaColor<span class="token operator">:</span> <span class="token string">'#2AB8FF'</span><span class="token punctuation">,</span>
+              borderWidth<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+              color<span class="token operator">:</span> <span class="token string">'green'</span>
             <span class="token punctuation">}</span>
           <span class="token punctuation">}</span><span class="token punctuation">,</span>
-          <span class="token literal-property property">zoom</span><span class="token operator">:</span> <span class="token number">1.1</span><span class="token punctuation">,</span>
-          <span class="token literal-property property">roam</span><span class="token operator">:</span> <span class="token boolean">false</span>
+          zoom<span class="token operator">:</span> <span class="token number">1.1</span><span class="token punctuation">,</span>
+          roam<span class="token operator">:</span> <span class="token boolean">false</span>
         <span class="token punctuation">}</span><span class="token punctuation">,</span>
         <span class="token punctuation">{</span>
-          <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'effectScatter'</span><span class="token punctuation">,</span>
-          <span class="token literal-property property">coordinateSystem</span><span class="token operator">:</span> <span class="token string">'geo'</span><span class="token punctuation">,</span>
-          <span class="token literal-property property">showEffectOn</span><span class="token operator">:</span> <span class="token string">'render'</span><span class="token punctuation">,</span>
-          <span class="token literal-property property">rippleEffect</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-            <span class="token literal-property property">period</span><span class="token operator">:</span> <span class="token number">15</span><span class="token punctuation">,</span>
-            <span class="token literal-property property">scale</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
-            <span class="token literal-property property">brushType</span><span class="token operator">:</span> <span class="token string">'fill'</span>
+          type<span class="token operator">:</span> <span class="token string">'effectScatter'</span><span class="token punctuation">,</span>
+          coordinateSystem<span class="token operator">:</span> <span class="token string">'geo'</span><span class="token punctuation">,</span>
+          showEffectOn<span class="token operator">:</span> <span class="token string">'render'</span><span class="token punctuation">,</span>
+          rippleEffect<span class="token operator">:</span> <span class="token punctuation">{</span>
+            period<span class="token operator">:</span> <span class="token number">15</span><span class="token punctuation">,</span>
+            scale<span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+            brushType<span class="token operator">:</span> <span class="token string">'fill'</span>
           <span class="token punctuation">}</span><span class="token punctuation">,</span>
-          <span class="token literal-property property">hoverAnimation</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-          <span class="token literal-property property">itemStyle</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-            <span class="token literal-property property">normal</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-              <span class="token literal-property property">color</span><span class="token operator">:</span> <span class="token string">'aqua'</span><span class="token punctuation">,</span>
-              <span class="token literal-property property">shadowBlur</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
-              <span class="token literal-property property">shadowColor</span><span class="token operator">:</span> <span class="token string">'#333'</span>
+          hoverAnimation<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          itemStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+            normal<span class="token operator">:</span> <span class="token punctuation">{</span>
+              color<span class="token operator">:</span> <span class="token string">'aqua'</span><span class="token punctuation">,</span>
+              shadowBlur<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+              shadowColor<span class="token operator">:</span> <span class="token string">'#333'</span>
             <span class="token punctuation">}</span>
           <span class="token punctuation">}</span><span class="token punctuation">,</span>
-          <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-            <span class="token literal-property property">formatter</span><span class="token operator">:</span> <span class="token string">'{b}'</span><span class="token punctuation">,</span>
-            <span class="token literal-property property">position</span><span class="token operator">:</span> <span class="token string">'right'</span><span class="token punctuation">,</span>
-            <span class="token literal-property property">offset</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">15</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-            <span class="token literal-property property">show</span><span class="token operator">:</span> <span class="token boolean">true</span>
+          label<span class="token operator">:</span> <span class="token punctuation">{</span>
+            formatter<span class="token operator">:</span> <span class="token string">'{b}'</span><span class="token punctuation">,</span>
+            position<span class="token operator">:</span> <span class="token string">'right'</span><span class="token punctuation">,</span>
+            offset<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">15</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            show<span class="token operator">:</span> <span class="token boolean">true</span>
           <span class="token punctuation">}</span><span class="token punctuation">,</span>
-          <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          data<span class="token operator">:</span> <span class="token punctuation">[</span>
             <span class="token punctuation">{</span>
-              <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'余杭区'</span><span class="token punctuation">,</span>
-              <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">119.978959</span><span class="token punctuation">,</span><span class="token number">30.27365</span><span class="token punctuation">]</span>
+              name<span class="token operator">:</span> <span class="token string">'余杭区'</span><span class="token punctuation">,</span>
+              value<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">119.978959</span><span class="token punctuation">,</span><span class="token number">30.27365</span><span class="token punctuation">]</span>
             <span class="token punctuation">}</span>
           <span class="token punctuation">]</span>
         <span class="token punctuation">}</span>
@@ -151,6 +151,6 @@
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.dbea4ab9.js" defer></script><script src="/assets/js/2.03d1e9d6.js" defer></script><script src="/assets/js/9.75fe7d51.js" defer></script>
+    <script src="/assets/js/app.79ad13e6.js" defer></script><script src="/assets/js/2.20e28fc8.js" defer></script><script src="/assets/js/9.915065dc.js" defer></script>
   </body>
 </html>

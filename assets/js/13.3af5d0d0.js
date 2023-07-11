@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{375:function(t,e,s){"use strict";s.r(e);var n=s(45),o=Object(n.a)({},(function(){var t=this.$createElement,e=this._self._c||t;return e("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[e("h1",[this._v("tools 快速生成vue代码")])])}),[],!1,null,null,null);e.default=o.exports}}]);
